@@ -1,0 +1,227 @@
+body{ 
+    margin:0; 
+    padding:0; 
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+       
+line{
+    stroke: black;
+    stroke-width: 5;
+    opacity: 0.5;
+}
+
+circle.natural{
+    opacity: 1;
+/*   stroke: black;*/
+/*   stroke-width: 1;*/
+/*    fill: rgb(255, 220, 170); */
+    fill: rgb(220, 220, 220);
+}
+
+circle.prime{
+    opacity: 1;
+    fill: rgb(125, 125, 250);
+/*    stroke-width: 1;*/
+/*    stroke: black;*/
+}
+
+circle.hollow-prime{
+    opacity: .375;
+    fill: rgb(125, 125, 250);
+/*    stroke-width: 1;*/
+/*    stroke: black;*/
+    
+}
+
+circle.old-hollow-prime{
+    opacity: .375;
+    fill: rgb(125, 125, 250);
+/*    stroke-width: 1;*/
+/*    stroke: black;*/
+    
+}
+
+circle.prime-factor{
+    opacity: 1;
+    fill: rgb(125, 125, 250);
+/*    stroke-width: 1;*/
+/*    stroke: black;*/
+    pointer-events: none;   /* This keeps the prime factors from obscuring a mouseover on the natural number underneath. */
+}
+
+circle.old-prime-factor{
+    opacity: 1;
+    fill: rgb(125, 125, 250);
+/*    stroke-width: 1;*/
+/*    stroke: black;*/
+    pointer-events: none;   /* This keeps the prime factors from obscuring a mouseover on the natural number underneath. */
+}
+
+text.natural{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+}
+
+text.prime{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+}
+
+text.prime{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+}
+
+#prime-label{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+    opacity: 0.5;
+}
+
+#new-prime-label{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+    opacity: 0.5;
+}
+
+text.hollow-prime{
+    opacity: 0.5;
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+}
+
+text.old-hollow-prime{
+    opacity: 0.5;
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+}
+
+text.prime-factor{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+    pointer-events: none;   /* This keeps the text on the prime factors from obscuring a mouseover on the natural number underneath. */
+}
+
+text.old-prime-factor{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+    pointer-events: none;   /* This keeps the text on the prime factors from obscuring a mouseover on the natural number underneath. */
+}
+
+#prime-equation{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+    opacity: 0.5;
+}
+
+#old-prime-equation{
+    fill: black;
+    font-family: sans-serif;
+    text-anchor: middle;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+#prime-tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+.hidden {
+    display: none;
+}
+
+#prime-tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+/*    line-height: 20px;*/
+}
+
+#one-tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+#one-tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+/*    line-height: 20px;*/
+}
+
+#theorem-tooltip {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+#theorem-tooltip p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+/*    line-height: 20px;*/
+}
+
+#splash{
+    fill: white;
+    x: 0;
+    y: 0;
+}
+
+/* For the text. */
+div.splash{
+    position: absolute;
+    opacity: 1.0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.splash-emph{
+    color: rgb(125, 125, 250);
+}
